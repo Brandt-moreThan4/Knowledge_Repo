@@ -5,37 +5,73 @@
 
 
 
-## Blogs
 
-* [Aswath Damodoran's Blog](https://aswathdamodaran.blogspot.com/)
+
 
 ## Git & GitHub
 ### GitHub
  * [GitHub Markdown](https://docs.github.com/en/github/writing-on-github): Github's reference doc for writing their markdown. 
 ### Git
 * [Git Concepts](https://onlywei.github.io/explain-git-with-d3/): Git explained visually. Very helpful for understanding how it works.
+* Cheat Sheets
+  * [Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet/)
+  * [Visual Cheat Sheet](https://ndpsoftware.com/git-cheatsheet.html#loc=index;)
 
+
+## Government Data
+
+## Open Courseware
+
+## Python
+
+
+## R
+
+## Data Sources
+* [Aswath Damodaran's](https://pages.stern.nyu.edu/~adamodar/): Aswath Damodaran's personal website.
+* [U.S Government](https://treasurydirect.gov/govt/reports/pd/histdebt/histdebt_histo5.htm) :   Historical Outstanding Debt
+* [FRED](https://fred.stlouisfed.org/) :   St. Louis Federal Reserve Bank Data
+
+## Blogs & Good Writing
+
+* [Aswath Damodoran's Blog](https://aswathdamodaran.blogspot.com/)
+* [Howard Marks](https://www.oaktreecapital.com/insights/howard-marks-memos) :   Memo's written by Marks
+* [Berkshire Hathaway](https://www.berkshirehathaway.com/letters/letters.html) :   Berkshire's shareholder letters
+* [Oshaughnessy Asset Management](https://www.osam.com/Commentary) :   OSAM's blog and free research
+* [Bill Gates](https://www.gatesnotes.com/Books) : Gates' Book Blog
+* [Alpha Architect](https://alphaarchitect.com/blog/) :   Alpha Architect's Blog & Research
+* [Josh Brown](https://thereformedbroker.com/) :   Josh's Blog
+* [Michael Mauboussin](https://drive.google.com/drive/folders/1z7-wp4S5r4AaYOvmjaA1Vxcfq3IwDPQL?usp=drive_open) :  Michael's research papers
+* [Warren Buffet](https://t.co/hlCWrbFVRj?ssr=true) :   All Warren Buffet writings
+* [Tim Urban](https://waitbutwhy.com/) :   Fun, funny, and thought provoking blog. Actually quite amazing.
+* [Jerry Neumann](http://reactionwheel.net/) :   Blog by a venture capitalist
+* [Turner Novak](https://turner.substack.com/people/1102740-turner-novak) :   Another good looking blog
+* [Matthew Ball](https://www.matthewball.vc/) :   Anotha one
+* [Jesse Livermore](http://www.philosophicaleconomics.com/) :   Jesse is real smart.
+* [Kevin Simler](https://meltingasphalt.com/) :   Another fun blog.
 
 ## Uncategorized
 
+## Cheat Sheets
+
+
+## Web Development
+
+
 
 * [Robert Shiller](http://www.econ.yale.edu/~shiller/) :   Shiller's open courses
-* [Howard Marks](https://www.oaktreecapital.com/insights/howard-marks-memos) :   Memo's written by Marks
-* [Berkshire Hathaway](https://www.berkshirehathaway.com/letters/letters.html) :   Berkshire's shareholder letters
-* [FRED](https://fred.stlouisfed.org/) :   St. Louis Federal Reserve Bank Data
-* [Oshaughnessy Asset Management](https://www.osam.com/Commentary) :   OSAM's blog and free research
-* [U.S Government](https://treasurydirect.gov/govt/reports/pd/histdebt/histdebt_histo5.htm) :   Historical Outstanding Debt
+
+
+
+
 * [Al Sweigart](https://automatetheboringstuff.com/) :   Free Python Tutorial for the book "Automate The Boring Stuff With Python"
 * [W3Schools](https://www.w3schools.com/) :   Amazing source to learn how to code
-* [Bill Gates](https://www.gatesnotes.com/Books) :   Gates' Book Blog
+
 * [Khan Academy](https://www.khanacademy.org/) :   The best educator to ever exists
-* [Alpha Architect](https://alphaarchitect.com/blog/) :   Alpha Architect's blog &Research
+
 * [U.S Government](https://fiscal.treasury.gov/reports-statements/financial-report/) :   U.S Government's Financial Report
 * [John Geanakoplos](https://oyc.yale.edu/economics/econ-251) :   John's Financial Theory Course
-* [Aswath Damodaran](http://aswathdamodaran.blogspot.com/) :   Damodaran's blog
-* [Josh Brown](https://thereformedbroker.com/) :   Josh's Blog
-* [Michael Mauboussin](https://drive.google.com/drive/folders/1z7-wp4S5r4AaYOvmjaA1Vxcfq3IwDPQL?usp=drive_open) :   Michael's research papers
-* [Warren Buffet](https://t.co/hlCWrbFVRj?ssr=true) :   All Warren Buffet writings
+
 * [James Clear](https://jamesclear.com/great-speeches) :   Amazing Speeches
 * [Eugene Wei](https://www.eugenewei.com/) :   Eugene's Blog
 * [Youtube Guy](https://www.youtube.com/channel/UC7Iuuzc5sK1ZwcIBxiNQJfQ) :   Free video VBA course
@@ -76,18 +112,14 @@
 * [W3Schools](https://www.w3schools.com/python/python_datetime.asp) :   Python Date Time translation reference.
 * [Y Combinator](https://www.youtube.com/watch?v=CBYhVcO4WgI&list=PL5q_lef6zVkaTY_cT1k7qFNF2TidHCe-1) :   A must watch series of lectures on how to start a start up. Focused mainly around technology businesses.
 * [??](https://www.notion.so/A-Beginner-s-Guide-to-becoming-a-First-Principles-Thinker-637ab7236c8f49978f37457fa565edba) :   A great resource for learning how to think using 'First Principles'.
-* [Kevin Simler](https://meltingasphalt.com/) :   Another fun blog.
+
 * [Desmos](https://www.desmos.com/calculator) :   Pretty sweet, online graphing calculator
 * [U.S Government](https://www.treasury.gov/resource-center/data-chart-center/interest-rates/pages/textview.aspx?data=yield) :   U.S yield curve data.
 * [Nikhil Krishnan](https://outofpocket.health/) :   Cool blog about healthcare.
 * [Greg Bland](https://algotrading101.com/learn/yahoo-finance-api-guide/) :   Guide to using an API to access Yahoo Finance data
 * [Don Chance](http://www.donchance.com/) :   Dr. Chance's personal website.
 * [NASA](https://moon.nasa.gov/) :   Just some fun moon stuff.
-* [Tim Urban](https://waitbutwhy.com/) :   Fun, funny, and thought provoking blog. Actually quite amazing.
-* [Jerry Neumann](http://reactionwheel.net/) :   Blog by a venture capitalist
-* [Turner Novak](https://turner.substack.com/people/1102740-turner-novak) :   Another good looking blog
-* [Matthew Ball](https://www.matthewball.vc/) :   Anotha one
-* [Jesse Livermore](http://www.philosophicaleconomics.com/) :   Jesse is real smart.
+*
 * [Bill Gurley](https://abovethecrowd.com/) :   Bill's Blog
 * [Baby Name Wizard](https://www.babynamewizard.com/d3js-voyager/popup.html#prefix=david&sw=f&exact=true) :   Fun tools to see baby name trends over time.
 * [AQR](https://www.aqr.com/Insights/Research/Book/20-for-Twenty) :   20 of AQR's best papers. Cliff is hilarious.
