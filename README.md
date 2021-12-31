@@ -29,12 +29,16 @@
 * [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf): Tough book, but the explanations are extremely thorough if you can take it.
 * [Optimization Methods in Finance](http://web.math.ku.dk/~rolf/CT_FinOpt.pdf): Looks good, but it's probably too mathy.
 * [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) :   Data science in Python. Good book to start with.
-* [Think Stats][(https://greenteapress.com/wp/think-stats-2e/](https://greenteapress.com/thinkstats2/html/index.html)) :   Learning stats with Python.
+* [Think Stats](https://greenteapress.com/wp/think-stats-2e/](https://greenteapress.com/thinkstats2/html/index.html)) :   Learning stats with Python.
 * [Allen Downey](http://allendowney.github.io/ThinkBayes2/) :   Bayesian Statistics in Python.
 * [Hands on Machine Learning](https://github.com/ageron/handson-ml2) : Notebooks that accompany the book. The ones for quickly teaching linear algebra, calculus, numpy, and matplotlib are great. 
 * [R for Data Science](https://r4ds.had.co.nz/) :   R for data science.
 * [R Graphics Cookbook](https://r-graphics.org/) :   All you could ever want, tutorials on R plotting. Mostly using gpplot.
 * [Jupyter Notebooks](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks#statistics-machine-learning-and-data-science) :   A bunch of really cool Jupyter notebooks.
+* [Introduction To Probability](https://github.com/jgscott/ECO394D/blob/master/ref/Bertsekas_Tsitsiklis_Introduction_to_probability.pdf): I haven't read it, but it looks pretty good.
+* [Data Science in R: A Gentle Introduction](https://bookdown.org/jgscott/DSGI/): My professor at UT. Cool guide and a good first start to R.
+
+
 
 ### Python
 * [Automate The Boring Stuff With Python](https://automatetheboringstuff.com/) :   Amazing book.
@@ -52,11 +56,15 @@
 
 ## Open Courseware
 * [Stanford Machine Learning](https://see.stanford.edu/Course/CS229): Andrew Ng teaches ML. The lecture notes that accompany the lectures are great.
+* [Robert Shiller](http://www.econ.yale.edu/~shiller/) :   Shiller's open courses
+* [John Geanakoplos](https://oyc.yale.edu/economics/econ-251) :   John's Financial Theory Course
+
 
 ## Python
 
 ### How to
 * [Virtual Environments](http://web.math.ku.dk/~rolf/CT_FinOpt.pdf): How to set up a virtual environment in python.
+* [Sqlite](https://realpython.com/python-sql-libraries/): Covers all the basics of working with sqlite files through python.
 
 
 ### References
@@ -117,13 +125,6 @@
 
 ## Finance
 * [Koyfin](https://www.koyfin.com/research/) :   Koyfin is a free bloomberg alternative.
-* [Robert Shiller](http://www.econ.yale.edu/~shiller/) :   Shiller's open courses
-* [John Geanakoplos](https://oyc.yale.edu/economics/econ-251) :   John's Financial Theory Course
-
-
-
-
-## Uncategorized
 
 ## Cheat Sheets
 * [Stanford](https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf) :   HTML Cheatsheet
@@ -142,7 +143,6 @@
 * [Django Cookbok](https://learndjango.com/) :   This website is a bit of a cookbook on how to carry out different different Django things you may want to include in a website. Will Vincent.
 
 
-
 ## Youtube
 * [Y Combinator](https://www.youtube.com/watch?v=CBYhVcO4WgI&list=PL5q_lef6zVkaTY_cT1k7qFNF2TidHCe-1) :   A must watch series of lectures on how to start a start up. Focused mainly around technology businesses.
 * [Grant Sanderson](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) :   Really helpful math videos. Good for understanding some basic calculus topics on a deep level.
@@ -156,3 +156,8 @@
 * [U.S Government](https://fiscal.treasury.gov/reports-statements/financial-report/) :   U.S Government's Financial Report
 
 
+
+## Uncategorized
+* [Richard Feynman Lectures](https://www.cantorsparadise.com/every-richard-feynman-lecture-freely-available-out-there-dedede504ba5): "What do you care what other people think?"
+* [Tensor Flow NN Playground](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.41380&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false): Really neat tool for playing around with and visualizing what's going on in a neural network.
+* [Machine Learning Interview Cheat Sheets](https://sites.google.com/view/datascience-cheat-sheets)
