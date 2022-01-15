@@ -1,7 +1,7 @@
 # Master List
 
 ## Table of Contents
-
+*Need to add something here at some point.*
 
 
 
@@ -37,6 +37,7 @@
 * [Jupyter Notebooks](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks#statistics-machine-learning-and-data-science) :   A bunch of really cool Jupyter notebooks.
 * [Introduction To Probability](https://github.com/jgscott/ECO394D/blob/master/ref/Bertsekas_Tsitsiklis_Introduction_to_probability.pdf): I haven't read it, but it looks pretty good.
 * [Data Science in R: A Gentle Introduction](https://bookdown.org/jgscott/DSGI/): My professor at UT. Cool guide and a good first start to R.
+* [Reinforcement Learning: An Introduction](http://www.incompleteideas.net/book/the-book-2nd.html): Textbook on reinforement learning.
 
 
 
@@ -133,7 +134,7 @@
 * [Python Cheatsheet](https://www.pythoncheatsheet.org/) :   Amazing cheatsheets or python reference source
 * [Bootstrap cheat sheet](https://hackerthemes.com/bootstrap-cheatsheet/) :   Bootstrap cheat sheet
 * [Bootstrap cheat sheet](https://getbootstrap.com/docs/5.0/examples/cheatsheet/) :   Another Bootstrap cheatsheet
-
+* [Machine Learning Interview Cheat Sheets](https://sites.google.com/view/datascience-cheat-sheets): Good overview of machine learning concepts.
 
 
 ## Web Development
@@ -160,4 +161,5 @@
 ## Uncategorized
 * [Richard Feynman Lectures](https://www.cantorsparadise.com/every-richard-feynman-lecture-freely-available-out-there-dedede504ba5): "What do you care what other people think?"
 * [Tensor Flow NN Playground](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.41380&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false): Really neat tool for playing around with and visualizing what's going on in a neural network.
-* [Machine Learning Interview Cheat Sheets](https://sites.google.com/view/datascience-cheat-sheets)
+* [Quant Interview Prep](https://www.math.lsu.edu/~smolinsk/Quant_Interview_Prep.pdf)
+* 
