@@ -95,7 +95,7 @@
 * [Project Guten](https://www.gutenberg.org/) :   This website has a bunch of fee ebooks in multiple differnet formats
 * [Federal Reserve](https://www.federalreserve.gov/apps/fof/DisplayTable.aspx?t=b.101.h) :   U.S Household Wealth Data
 * [dwyl](https://github.com/dwyl/english-words) :   Github account that has text files with a bunch of words in them
-
+* [Ken French](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html): Ken French's personal website. A bunch of academic and industry papers use his data.
 
 ## Blogs & Good Writing
 * [Aswath Damodoran's Blog](https://aswathdamodaran.blogspot.com/): Aswath's blog.
@@ -162,4 +162,4 @@
 * [Richard Feynman Lectures](https://www.cantorsparadise.com/every-richard-feynman-lecture-freely-available-out-there-dedede504ba5): "What do you care what other people think?"
 * [Tensor Flow NN Playground](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.41380&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false): Really neat tool for playing around with and visualizing what's going on in a neural network.
 * [Quant Interview Prep](https://www.math.lsu.edu/~smolinsk/Quant_Interview_Prep.pdf)
-* 
+* [Project Euler](https://projecteuler.net/archives): Fun programming/math excercises.
