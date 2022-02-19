@@ -1,0 +1,352 @@
+---
+title: "R_Basics_Reference"
+author: "Brandt"
+output:
+  md_document:
+    variant: markdown_github
+---
+
+
+<!-- ```{r setup, include=FALSE} -->
+<!-- # knitr::opts_chunk$set(echo = FALSE,message = FALSE, warning = FALSE) -->
+<!-- ``` -->
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r, include=FALSE}
+# Import libraries
+library(tidyverse)
+library(ggplot2)
+
+```
+
+
+
+## Linear Regression
+Linear regression and plot, using only base R
+
+```{r}
+
+# Load one of R's built-in data sets about cars
+data(mtcars)
+
+# Fit a straight line for mpg vs hp and plot the result.
+
+mpg_model = lm(mpg ~ hp, data=mtcars) # Fit Linera Model
+plot(mtcars$hp, mtcars$mpg) # Plot Linear Model
+abline(mpg_model) # Draw the best fit line
+print(coef(mpg_model)) # Print the coefficients to command line
+
+```
+
+
+## Reading Data & Simple Statistics
+
+```{r,echo=FALSE}
+
+# library(readr)
+# tv_df <- read_csv("data/tvshows.csv")
+tv_df = read.csv('data/tvshows.csv', header=TRUE)
+# View(tv_data)
+```
+
+
+```{r}
+str(tv_df) # Basic dataframe info  
+head(tv_df) # View the first 6 rows
+
+
+```
+### Simple Analysis
+
+```{r}
+
+xtabs(~Genre + Duration, data=tv_df) # Cross tabulate the data
+
+
+
+# Get the Average audience size  by genre
+tv_df %>% group_by(Genre) %>% summarise(mean_GRP = mean(GRP))
+
+
+# Plot engagement by genre
+ggplot(tv_df) + geom_point(aes(x=GRP,y=PE,color=Genre))
+
+
+```
+
+
+### ACL dataset
+```{r}
+
+acl_df = read.csv('data/aclfest.csv', header=TRUE)
+str(acl_df)
+head(acl_df)
+
+
+# How many bands played at lallapalooza
+palooza_counts = xtabs(~lollapalooza, data=acl_df)
+print(palooza_counts)
+palooza_proportions = prop.table(palooza_counts)
+palooza_proportions
+
+# Same as above but with piping
+xtabs(~lollapalooza,data=acl_df) %>% prop.table %>% round(3)
+
+
+# Joint probs of acl and lolla
+xtabs(~acl + lollapalooza, data=acl_df)
+xtabs(~acl + lollapalooza, data=acl_df) %>% prop.table %>%  round(3)
+
+
+# Or probability of playing at Bonnaroo or Coachella
+ # Add margins, just adds the total rows
+xtabs(~bonnaroo + coachella, data=acl_df) %>%
+  prop.table %>%
+  addmargins
+
+
+```
+
+
+## Plotting
+
+Keep this in mind for plotting:
+
+1. Scatter plots, to show relationships among numerical variables.
+2. Line graphs, to show change over time.
+3. Histograms, to show data distributions.
+4. Boxplots, to show between-group and within-group variation.
+5. Bar plots, to show summary statistics (like counts, means, or proportions).
+
+Use faceting and aesthetic variation (e.g. color) to encode multivariate information.
+
+For more in-depth guide, see: [https://bookdown.org/jgscott/DSGI/plots.html](https://bookdown.org/jgscott/DSGI/plots.html)
+
+
+```{r}
+tvshows = read.csv('data/tvshows.csv', header=TRUE)
+# head(tvshows)
+power_christmas2015 = read.csv('data/power_christmas2015.csv', header=TRUE)
+# head(power_christmas2015)
+rapidcity = read.csv('data/rapidcity.csv', header=TRUE)
+# head(rapidcity)
+kroger = read.csv('data/kroger.csv', header=TRUE)
+# head(kroger)
+car_class_summaries = read.csv('data/car_class_summaries.csv', header=TRUE)
+# head(car_class_summaries)
+
+
+
+
+# Scatter Plot with shape as a facet
+ggplot(tvshows) + 
+  geom_point(aes(x=GRP, y=PE, shape=Genre))
+
+# Scatter Plot with size as a facet. 
+# This makes more sense to do on a quantitative variable though.
+ggplot(tvshows) + 
+  geom_point(aes(x=GRP, y=PE, size=Genre))
+
+
+
+# Facet plot by different genre
+ggplot(tvshows) + 
+  geom_point(aes(x=GRP, y=PE)) + 
+  facet_wrap(~Genre)
+
+
+# Line plot
+ggplot(power_christmas2015) + 
+  geom_line(aes(x=hour, y=ERCOT))
+
+
+
+# Historgram
+ggplot(rapidcity) + 
+  geom_histogram(aes(x=Temp),bins=30)
+
+# Histogram faceted by month
+ggplot(rapidcity) + 
+  geom_histogram(aes(x=Temp), binwidth=3) + 
+  facet_wrap(~Month)
+
+
+# Histogram with probabilities
+ggplot(rapidcity) + 
+  geom_histogram(aes(x=Temp, y=..density..), binwidth=3)
+
+
+
+# Boxplots, grouped by city
+ggplot(kroger) + 
+  geom_boxplot(aes(x = city, y = vol))
+
+
+# Demand graph
+ggplot(kroger) + 
+  geom_point(aes(x = vol, y = price))
+
+
+
+
+# Bar plot of summary stats
+
+# Use geom_col when the data is already summarized
+ggplot(car_class_summaries) + 
+  geom_col(aes(x=class, y=average_cty))
+
+# Use geom_bar when you need R to do the counting of the raw data
+data(mpg) # read in the dataset
+ggplot(mpg) + 
+  geom_bar(aes(x=class))
+
+
+
+
+# Adding better labels to plot and adjusting the font size
+
+ggplot(kroger) + 
+  geom_boxplot(aes(x = city, y = vol)) + 
+  labs(x="Location of Kroger store",
+       y="Weekly sales volume (packages sold)",
+       title="Weekly cheese sales at 11 U.S. Kroger stores") + 
+  theme(axis.text = element_text(size = 8)) 
+
+```
+
+
+## Summarizing Data
+
+```{r}
+
+#Calculate summary stats
+rapidcity %>%
+  summarize(avg_temp = mean(Temp),
+            median_temp = median(Temp),
+            sd_temp = sd(Temp),
+            iqr_temp = IQR(Temp),
+            min_temp = min(Temp),
+            max_temp = max(Temp),
+            q05_temp = quantile(Temp, 0.05),
+            q95_temp = quantile(Temp, 0.95)) %>%
+  round(1)
+
+
+# Add a column to rapidcity to calculate the z score
+rapidcity = rapidcity %>%
+  mutate(z = (Temp - mean(Temp))/sd(Temp))
+
+rapidcity
+
+```
+
+
+
+## Data Wrangling with tidyverse
+
+```{r}
+
+
+
+# Calculate summary statistic by group
+rapidcity %>%
+  group_by(Month) %>%
+  summarize(avg_temp = mean(Temp),
+            sd_temp = sd(Temp),
+            q05_temp = quantile(Temp, 0.05),
+            q95_temp = quantile(Temp, 0.95)) %>%
+  round(1)
+
+
+
+rapidcity_summary = rapidcity %>%
+  group_by(Month) %>%
+  summarize(avg_temp = mean(Temp),
+            prop_freeze = sum(Temp <= 32)/n())
+
+rapidcity_summary
+
+# We need to add 'facto'r here because the plot expects x to be categorical
+ggplot(rapidcity_summary) + 
+  geom_col(aes(x=factor(Month), y=avg_temp))
+
+
+ggplot(rapidcity_summary) + 
+  geom_col(aes(x=factor(Month), y=prop_freeze))
+
+
+
+# Filter data by year before computing summary statistics 
+rapidcity %>%
+  filter(Year >= 2006 & Year <= 2009) %>%
+  group_by(Month) %>%
+  summarize(avg_temp = mean(Temp),
+            sd_temp = sd(Temp)) %>%
+  round(1)
+
+
+
+# Using 'select' allows you to pick out certain columns
+
+rapidcity %>%
+  filter(Year == 2009) %>%
+  select(Month, Day, Temp)
+
+
+#Alternatively, using a  negative sign will remove certain columns.
+# Below achieves same result as above
+rapidcity %>%
+  filter(Year == 2009) %>%
+  select(-Year,-z)
+
+
+
+# Mutate allows you to add new variables from old ones
+rapidcity_augmented = rapidcity %>%
+  mutate(Summer = ifelse(Month == 6 | Month == 7 | Month == 8,
+                         yes="summer", no="not_summer"))
+
+rapidcity_augmented
+
+
+# Use arrange for sorting
+rapidcity %>%
+  arrange(Temp)
+
+# The default is ascending. We can change that:
+rapidcity %>%
+  arrange(desc(Temp))
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
