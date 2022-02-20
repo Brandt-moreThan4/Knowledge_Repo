@@ -251,7 +251,7 @@ rapidcity %>%
 rapidcity = rapidcity %>%
   mutate(z = (Temp - mean(Temp))/sd(Temp))
 
-rapidcity
+head(rapidcity)
 
 ```
 
@@ -270,6 +270,7 @@ rapidcity %>%
             sd_temp = sd(Temp),
             q05_temp = quantile(Temp, 0.05),
             q95_temp = quantile(Temp, 0.95)) %>%
+  
   round(1)
 
 
@@ -303,16 +304,16 @@ rapidcity %>%
 
 # Using 'select' allows you to pick out certain columns
 
-rapidcity %>%
+head(rapidcity %>%
   filter(Year == 2009) %>%
-  select(Month, Day, Temp)
+  select(Month, Day, Temp))
 
 
 #Alternatively, using a  negative sign will remove certain columns.
 # Below achieves same result as above
-rapidcity %>%
+head(rapidcity %>%
   filter(Year == 2009) %>%
-  select(-Year,-z)
+  select(-Year,-z))
 
 
 
@@ -321,16 +322,16 @@ rapidcity_augmented = rapidcity %>%
   mutate(Summer = ifelse(Month == 6 | Month == 7 | Month == 8,
                          yes="summer", no="not_summer"))
 
-rapidcity_augmented
+head(rapidcity_augmented)
 
 
 # Use arrange for sorting
-rapidcity %>%
-  arrange(Temp)
+head(rapidcity %>%
+  arrange(Temp))
 
 # The default is ascending. We can change that:
-rapidcity %>%
-  arrange(desc(Temp))
+head(rapidcity %>%
+  arrange(desc(Temp)))
 
 
 
