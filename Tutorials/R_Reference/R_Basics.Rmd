@@ -22,8 +22,17 @@ knitr::opts_chunk$set(echo = TRUE)
 # Import libraries
 library(tidyverse)
 library(ggplot2)
+library(mosaic)
+#install.packages('dplyr')
+# library(dplyr) # Loading Dplyr package
 
 ```
+
+Most of this is stolen from my former professor's book:
+
+[Data Science in R: A Gentle Introduction](Data Science in R: A Gentle Introduction)
+
+ - *James Scott*
 
 
 
@@ -325,9 +334,171 @@ rapidcity %>%
 
 
 
+# Find the 5 coldest months
+rapidcity %>%
+  group_by(Year, Month) %>%
+  summarize(avg_temp = mean(Temp),
+            coldest_day = min(Temp),
+            warmest_day = max(Temp)) %>%
+  arrange(avg_temp) %>%
+  head(5) %>%
+  round(1)
 
 
 
+titanic = read.csv("data/titanic.csv") # Load in the titanic data set
+head(titanic)
+
+
+# A bit more complex wranlging
+surv_adults = titanic %>%
+  mutate(age_bracket = ifelse(age >= 18,
+                              yes="adult", no="child")) %>%
+  filter(age_bracket == "adult") %>%
+  group_by(sex, passengerClass) %>%
+  summarize(total_count = n(),
+            surv_count = sum(survived == 'yes'),
+            surv_pct = surv_count/total_count)
+
+surv_adults
+ggplot(surv_adults) + 
+  geom_col(aes(x=sex, y=surv_pct,fill=sex)) + 
+  facet_wrap(~passengerClass, nrow=1)
+
+
+
+
+
+toyimports  = read.csv("data/toyimports.csv") # Load in the titanic data set
+head(toyimports )
+
+
+country_totals = toyimports %>%
+  group_by(partner_name) %>%
+  summarize(total_dollar_value = sum(US_report_import)) %>%
+  arrange(desc(total_dollar_value))
+
+country_totals
+
+top3_partner_names = c('China', 'Denmark', 'Canada')
+
+
+top3_byyear = toyimports %>%
+  filter(partner_name %in% top3_partner_names) %>%
+  group_by(year, partner_name) %>%
+  summarize(yearly_dollar_value = sum(US_report_import))
+
+
+ggplot(top3_byyear) +  
+  geom_line(aes(x=year, y=yearly_dollar_value, color=partner_name)) +
+  scale_color_brewer(type='qual') + 
+  scale_y_log10() + 
+  scale_x_continuous(breaks = 1996:2005) + 
+  labs(x="Year", y = "Dollar value of imports (log scale)",
+       title="Toy imports from the U.S.'s top-3 partners, 1996-2005")
+
+
+
+```
+
+
+### Data Wrangle shortcuts
+
+```{r}
+
+mean(~age,data=titanic) # Calcualte the mean
+mean(age ~ sex, data=titanic) # Calcualte the mean by category
+prop(~survived, data=titanic) # Proportion of titanic survivors
+favstats(age ~ sex, data=titanic) # combo of all the good stuff
+
+```
+
+
+
+
+## Regression
+
+```{r}
+
+heartrate = read.csv('data/heartrate.csv')
+head(heartrate)
+
+
+ggplot(heartrate) + 
+  geom_point(aes(x=age, y=hrmax)) + 
+  geom_smooth(aes(x=age, y=hrmax), method='lm')
+
+
+model_hr = lm(hrmax ~ age, data=heartrate)
+coef(model_hr)
+
+y_hats = predict(model_hr)
+
+plot(y_hats,heartrate$hrmax)
+plot(heartrate$age,model_hr$residuals)
+
+
+
+
+ebola = read.csv('data/ebola.csv')
+head(ebola)
+
+# Looks exponential so lienar regression seems suspect at first
+ggplot(ebola) + 
+  geom_line(aes(x=Day, y = totalSus))
+
+# But we can change the y var
+# total cases over time: logarithm scale for y variable
+ggplot(ebola) + 
+  geom_line(aes(x=Day, y = log(totalSus)))
+
+# this looks like something that could be fit with linear regression
+
+# linear model for log(cases) versus time
+lm_ebola = lm(log(totalSus) ~ Day, data=ebola)
+coef(lm_ebola)
+
+# total cases over time with reference line
+ggplot(ebola) + 
+   geom_line(aes(x=Day, y = log(totalSus))) + 
+   geom_abline(intercept = 4.54, slope = 0.0216, color='red')
+
+
+
+# Power Law
+
+animals = read.csv('data/animals.csv')
+head(animals)
+
+
+# Hard to see any relationship at first because of dramtic scale difference
+ggplot(animals) + 
+  geom_point(aes(x=body, y=brain))
+
+
+# But, taking the log of both variables helps squish everything together!
+ggplot(animals) + 
+  geom_point(aes(x=log(body), y=log(brain)))
+
+
+# Eestimating demand function!
+
+milk = read.csv('data/milk.csv')
+head(milk)
+
+
+# Based on the below plot, we can see a lienar relaitonship doesn't exactly make sense.
+
+ggplot(milk) + geom_point(aes(x=price,y=sales))
+
+# Probably a power law?
+ggplot(milk) +
+   geom_point(aes(x=log(price), y=log(sales)))
+
+
+# Oh yea. Now we can estimate that function
+lm_milk = lm(log(sales) ~ log(price), data=milk)
+coef(lm_milk)
 
 
 
@@ -336,11 +507,6 @@ rapidcity %>%
 
 
 ```
-
-
-
-
-
 
 
 
