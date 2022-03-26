@@ -30,13 +30,13 @@
 * [Optimization Methods in Finance](http://web.math.ku.dk/~rolf/CT_FinOpt.pdf): Looks good, but it's probably too mathy.
 * [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) :   Data science in Python. Good book to start with.
 * [Think Stats](https://greenteapress.com/wp/think-stats-2e/](https://greenteapress.com/thinkstats2/html/index.html)) :   Learning stats with Python.
-* [Allen Downey](http://allendowney.github.io/ThinkBayes2/) :   Bayesian Statistics in Python.
+* [Think Bayes](http://allendowney.github.io/ThinkBayes2/) :   Bayesian Statistics in Python.
 * [Hands on Machine Learning](https://github.com/ageron/handson-ml2) : Notebooks that accompany the book. The ones for quickly teaching linear algebra, calculus, numpy, and matplotlib are great. 
 * [R for Data Science](https://r4ds.had.co.nz/) :   R for data science.
 * [R Graphics Cookbook](https://r-graphics.org/) :   All you could ever want, tutorials on R plotting. Mostly using gpplot.
 * [Jupyter Notebooks](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks#statistics-machine-learning-and-data-science) :   A bunch of really cool Jupyter notebooks.
 * [Introduction To Probability](https://github.com/jgscott/ECO394D/blob/master/ref/Bertsekas_Tsitsiklis_Introduction_to_probability.pdf): I haven't read it, but it looks pretty good.
-* [Data Science in R: A Gentle Introduction](https://bookdown.org/jgscott/DSGI/): My professor at UT. Cool guide and a good first start to R.
+* [Data Science in R: A Gentle Introduction](https://bookdown.org/jgscott/DSGI/): My professor at UT. Cool guy and a good first start to R.
 * [Reinforcement Learning: An Introduction](http://www.incompleteideas.net/book/the-book-2nd.html): Textbook on reinforement learning.
 
 
@@ -61,6 +61,9 @@
 * [John Geanakoplos](https://oyc.yale.edu/economics/econ-251) :   John's Financial Theory Course
 
 
+## Programming
+* [Think Data Structures](https://greenteapress.com/wp/think-data-structures/)
+
 ## Python
 
 ### How to
@@ -71,6 +74,7 @@
 ### References
 * [W3Schools Python Datetime](https://www.w3schools.com/python/python_datetime.asp) :   Python Date Time translation reference.
 * [Pythex](https://pythex.org/) :   Helper tool for using and learning regex.
+* [Regex 101](https://regex101.com/): Another, probably better regex helper.
 * [Pep 8](https://pep8.org/) :   Help in understanding python coding conventions
 
 ### Packages
@@ -79,7 +83,9 @@
 
 
 ## R
-
+* [Hands-On Programming with R](https://rstudio-education.github.io/hopr/): Decent introduction to R if you have never programmed before.
+* [R Cheat Cheats Galore](https://www.rstudio.com/resources/cheatsheets/): A whole bunch of R Cheat Sheets.
+* [Advanced R](https://adv-r.hadley.nz/): Taking R programming to the next level.
 
 
 ## Data Sources
