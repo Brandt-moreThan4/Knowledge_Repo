@@ -1,0 +1,4 @@
+# Patterns are applied recursively through sub directories.
+
+config.json
+*config*.json
