@@ -40,6 +40,11 @@
 * [Reinforcement Learning: An Introduction](http://www.incompleteideas.net/book/the-book-2nd.html): Textbook on reinforement learning.
 
 
+### Econometrics
+* [Econometrics - Bruce Hansen](https://www.ssc.wisc.edu/~bhansen/econometrics/): Looks like an awesome overview of econometrics.
+* [Probability and Statistics for Economists](https://www.ssc.wisc.edu/~bhansen/probability/): Same author as above.
+* [Forrecasting: Principles and Practice](https://otexts.com/fpp3/): Cool book, with R code.
+
 
 ### Python
 * [Automate The Boring Stuff With Python](https://automatetheboringstuff.com/) :   Amazing book.
@@ -126,6 +131,7 @@
 * [Don Chance](http://www.donchance.com/) :   Dr. Chance's personal website.
 * [Bill Gurley](https://abovethecrowd.com/) :   Bill's Blog
 * [AQR](https://www.aqr.com/Insights/Research/Book/20-for-Twenty) :   20 of AQR's best papers. Cliff is hilarious.
+* [Qoppac](https://qoppac.blogspot.com/): Systematic trading blog.
 
 
 
