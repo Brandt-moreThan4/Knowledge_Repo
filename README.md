@@ -108,6 +108,9 @@
 * [dwyl](https://github.com/dwyl/english-words) :   Github account that has text files with a bunch of words in them
 * [Ken French](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html): Ken French's personal website. A bunch of academic and industry papers use his data.
 
+## SQL
+* [LearningSQL Generate, Manipulate, and Retrieve Data](https://www.cuteboyprogrammers.com/pdf/humblebundle/learningsql3e.pdf): Decent introduction to SQL.
+
 ## Blogs & Good Writing
 * [Aswath Damodoran's Blog](https://aswathdamodaran.blogspot.com/): Aswath's blog.
 * [Howard Marks](https://www.oaktreecapital.com/insights/howard-marks-memos) :   Memo's written by Marks
@@ -147,6 +150,7 @@
 * [Bootstrap cheat sheet](https://hackerthemes.com/bootstrap-cheatsheet/) :   Bootstrap cheat sheet
 * [Bootstrap cheat sheet](https://getbootstrap.com/docs/5.0/examples/cheatsheet/) :   Another Bootstrap cheatsheet
 * [Machine Learning Interview Cheat Sheets](https://sites.google.com/view/datascience-cheat-sheets): Good overview of machine learning concepts.
+* [Latex Cheat Sheet](http://tug.ctan.org/info/undergradmath/undergradmath.pdf): There a bunch of latex cheat sheets. Easy google.
 
 
 ## Web Development
@@ -175,3 +179,5 @@
 * [Tensor Flow NN Playground](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.41380&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false): Really neat tool for playing around with and visualizing what's going on in a neural network.
 * [Quant Interview Prep](https://www.math.lsu.edu/~smolinsk/Quant_Interview_Prep.pdf)
 * [Project Euler](https://projecteuler.net/archives): Fun programming/math excercises.
+
+* 
