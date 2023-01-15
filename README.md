@@ -135,6 +135,8 @@
 * [Bill Gurley](https://abovethecrowd.com/) :   Bill's Blog
 * [AQR](https://www.aqr.com/Insights/Research/Book/20-for-Twenty) :   20 of AQR's best papers. Cliff is hilarious.
 * [Qoppac](https://qoppac.blogspot.com/): Systematic trading blog.
+* [Marc Andreesan's 2007 Blog](https://pmarchive.com/):  
+* [Marc Andeesan's current stuff](https://a16z.com/author/marc-andreessen/)
 
 
 
@@ -179,5 +181,4 @@
 * [Tensor Flow NN Playground](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.41380&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false): Really neat tool for playing around with and visualizing what's going on in a neural network.
 * [Quant Interview Prep](https://www.math.lsu.edu/~smolinsk/Quant_Interview_Prep.pdf)
 * [Project Euler](https://projecteuler.net/archives): Fun programming/math excercises.
-
-* 
+* [One Mathematical Cat](https://www.onemathematicalcat.org/main_table_of_contents.htm): Really well explained math lessons, for high-school math mainly.
