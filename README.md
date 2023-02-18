@@ -182,3 +182,4 @@
 * [Quant Interview Prep](https://www.math.lsu.edu/~smolinsk/Quant_Interview_Prep.pdf)
 * [Project Euler](https://projecteuler.net/archives): Fun programming/math excercises.
 * [One Mathematical Cat](https://www.onemathematicalcat.org/main_table_of_contents.htm): Really well explained math lessons, for high-school math mainly.
+* [Hedge Fund Presentations](https://www.10xebitda.com/hedge-fund-presentations/):
